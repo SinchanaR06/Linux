@@ -1,0 +1,41 @@
+1.CHECK OS DETAILS
+```bash
+cat /etc/os -release
+```
+Displays linux distribution details like:Ubuntu version,OS name,Version ID
+2.CREATE USER USING adduser
+```bash
+sudo adduser sinchu
+```
+Interactive method to create user
+It creates password and home directory
+3.SET USER PASSWORD
+  ```bash
+sudo passwd sinchu
+```
+Sets password for user
+4.CHECK ENCRYPTED PASSWORD
+  ```bash
+sudo sinchu /etc/shadow
+```
+Linux stores passwords in encrypted format for security
+5.SWITCH USER
+  ```bash
+su sinch
+```
+Switches to another user account
+6.LOCK USER ACCOUNT
+```bash
+sudo passwd -l sinchu
+```
+Locks user password
+7.UNLOCK USER ACCOUNT
+  ```bash
+sudo passwd -u sinchu
+```
+  Unlocks user account
+8.PASSWORD EXPPIRY
+  ```bash
+sudo chage -M 30 sinchu
+```
+Forces password change every 30 days
