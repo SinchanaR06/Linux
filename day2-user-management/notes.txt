@@ -1,4 +1,4 @@
-###1.CHECK OS DETAILS
+##1.CHECK OS DETAILS
 ```bash
 cat /etc/os -release
 ```
